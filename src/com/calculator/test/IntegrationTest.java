@@ -22,7 +22,11 @@ public class IntegrationTest extends MainTest<Main> {
 		mainPage.enterFirstNumber(0);
 		//solo.goBack();
 		System.out.println("Antes");
-		solo.sendKey(KeyEvent.KEYCODE_A);
+		
+		//EH ISSO QUE A GENTE QUER QUE FUNCIONE
+		solo.sendKey(KeyEvent.KEYCODE_HOME);
+		
+		
 		System.out.println("Depois");
 		mainPage.enterSecondNumber(10);
 		
